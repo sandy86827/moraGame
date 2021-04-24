@@ -146,11 +146,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private  void checkGameState(){
         int state=getWinState(player.getMora(),computer.getMora());
         if(state==EVEN){
-            Log.d(TAG, "checkGameState: "+"平手");
+            Log.d(TAG, "平手");
         }else if(state==COMPUTER_WIN){
-            Log.d(TAG, "checkGameState: "+"電腦贏");
+            Log.d(TAG, "電腦贏");
         }else if(state==PLAYER_WIN){
-            Log.d(TAG, "checkGameState: "+"玩家贏");
+            Log.d(TAG, "玩家贏");
         }
         new Thread(new Runnable() {
             @Override
